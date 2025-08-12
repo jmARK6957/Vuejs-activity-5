@@ -67,8 +67,7 @@ interface Task {
 const message = ref('Tasks');
 const newTask = ref('');
 const tasks = ref<Task[]>([
-  { id: 1, text: 'Learn Vue', completed: false },
-  { id: 2, text: 'Build a To-Do App', completed: true },
+
 ]);
 
 const editingTask = ref<Task | null>(null);
@@ -130,7 +129,7 @@ main {
   border-bottom: 1px solid #ccc;
 }
 
-.task-list li.completed span {
+.task-list li.com pleted span {
   text-decoration: line-through;
   color: #888;
 }
